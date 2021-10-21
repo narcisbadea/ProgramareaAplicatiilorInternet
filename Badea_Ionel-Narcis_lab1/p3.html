@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head>
+    <title>Tema PAI problema 3</title>
+    <Style>
+        table{
+            background-color: lightgray;
+            border-spacing: 0px;
+            border: 1px solid black;
+            position: absolute;
+            top: 12.5%;
+            left: 12.5%;
+            border-radius:25px;
+            padding:30px 30px; 
+        }
+        td{
+            height: 50px;
+        }
+        body {
+            background-color: lightblue;
+        }
+        input{
+            border-radius: 10px;
+        }
+    </Style>
+</head>
+<body>
+    <form action="mailto:server@yahoo.com" method="post"> 
+        <table align="center" style="width:75%"> 
+            <tr>
+                <td>Ce sampon folositi regulat?</td>
+                <td>
+                    <input name="sampon" type="radio" value="pantene"> Pantene   
+                    <input name="sampon" type="radio" value="elseve"> Elseve  
+                    <input name="sampon" type="radio" value="dove"> Dove  
+                    <input name="sampon" type="radio" value="londa"> Londa  
+                    <input name="sampon" type="radio" value="wella"> Wella  
+                </td>
+            </tr>
+            <tr>
+                <td>Ce va determina sa cumparati acest sampon?</td>
+                <td>
+                    <input type="checkbox" name="reclama">Reclama
+                    <input type="checkbox" name="pret">Pret
+                    <input type="checkbox" name="ambalaj">Ambalaj
+                    <input type="checkbox" name="marca">Marca
+                    <input type="checkbox" name="disponibilitatea">Disponibilitatea produsului 
+                </td>
+            </tr>
+            <tr>
+                <td>Ce apreciati cel mai mult la samponul pe care il cumparati?</td>
+                <td>
+                    <input name="apreciere" type="radio" value="mirosul"> Mirosul   
+                    <input name="apreciere" type="radio" value="timpul de efect"> Timpul de efect  
+                    <input name="apreciere" type="radio" value="calitatea"> Calitatea  
+                </td>
+            </tr>
+            <tr>
+                <td>Cat de frecvent folositi samponul?</td>
+                <td>
+                    <select name="varsta"> 
+                        <option value="1">O data pe saptamana</option> 
+                        <option value="2">De doua ori pe saptamana</option> 
+                        <option value="3" selected>De trei ori pe saptamana</option> 
+                        <option value="4">O data la doua saptamani</option> 
+                     </select>
+                </td>
+            </tr>
+            <tr>
+                <td>In ce categorie de varsta va incadrati?</td>
+                <td>
+                    <select name="varsta"> 
+                        <option value="categorie1">sub 18 ani</option> 
+                        <option value="categorie2">18 - 30 ani</option> 
+                        <option value="categorie3" selected>30 - 50 ani</option> 
+                        <option value="categorie4">peste 50 ani</option> 
+                     </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                    Exprimati mai jos cateva opinii personale cu privire la marca de sampun utilizata:
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                    <textarea name="opinii" cols="90" rows="3"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2"> 
+                    <input type="submit" value="Trimite"> 
+                    <input type="reset" value="Anulare"> 
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
