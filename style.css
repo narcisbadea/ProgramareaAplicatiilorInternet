@@ -1,13 +1,5 @@
-.firstTable{
-    width: 85%;
-    margin-top: 25px;
-    padding:25px 40px; 
-}
-body{
-    background-color: rgb(60, 203, 228);
-}
 td{
-    border: 3px solid black;
+    border: solid 1px black;
 }
 .mePhoto{
     max-height:100%; 
@@ -19,15 +11,25 @@ td{
     text-align:center; 
     vertical-align:middle"
 }
-.antet{
-    background-color: rgba(0, 60, 255, 0.637);
-    width: 75%;
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+.cv{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
-.limba{
-    text-align: center;
+.firstTable{
+    width: 100%;
+}
+.antet{
+    background-color: chartreuse;
+    border: 1px solid black;
+}
+.datePersonale{
+    background-color: chocolate;
+    border: 1px solid black;
+}
+body{
+    background-color: gray;
+}
+.alignLeft{
+    text-align: right;
 }
