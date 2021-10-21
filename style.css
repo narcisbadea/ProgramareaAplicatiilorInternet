@@ -1,5 +1,5 @@
 td{
-    border: solid 1px black;
+    
 }
 .mePhoto{
     max-height:100%; 
@@ -15,21 +15,31 @@ td{
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+    border: 3px solid black;
 }
 .firstTable{
     width: 100%;
 }
 .antet{
     background-color: chartreuse;
-    border: 1px solid black;
+    margin-bottom: 15px;
 }
 .datePersonale{
     background-color: chocolate;
-    border: 1px solid black;
 }
 body{
     background-color: gray;
 }
 .alignLeft{
     text-align: right;
+}
+.limba{
+    border-collapse: collapse;
+    text-align: center;
+}
+.border{
+    border: 1px solid black;
+}
+.marginRight{
+    margin-right: 20px;
 }
