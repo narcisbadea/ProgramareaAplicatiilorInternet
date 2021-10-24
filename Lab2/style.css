@@ -1,29 +1,36 @@
-.mePhoto{
+.container{
+    border: 3px solid black;
+    height: auto;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+img{
     max-height:100%; 
     max-width:100%;
 }
-.meCell{
-    width:170px; 
-    height: 255px;
+.photoCell{
+    width:150px; 
+    height: 225px;
     text-align:center; 
     vertical-align:middle"
 }
-.firstTable{
-    width: 100%;
-}
-.antet{
+.secondDIV{
     background-color: chartreuse;
     margin-bottom: 15px;
 }
 .datePersonale{
+    overflow:auto;
+    height: 300px;
+    font: Arial;
+    size: 12px;
+    font-style: italic;
+    font-weight: bold;
     background-color: chocolate;
 }
 body{
     background-color: gray;
-}
-.limba{
-    border-collapse: collapse;
-    text-align: center;
 }
 .border{
     border: 1px solid black;
@@ -37,24 +44,8 @@ body{
 table{
     border-collapse: collapse;
 }
-.paddingTop{
-    padding-top: 20px;
-}
 
 .paddingLeft{
     padding-left: 10px;
 }
-.cv{
-    font: Arial;
-    size: 12px;
-    font-style: italic;
-    font-weight: bold;
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-    border: 3px solid black;
-}
-.datePersonale{
-    overflow:auto;
-    height: 300px;
-}
+
