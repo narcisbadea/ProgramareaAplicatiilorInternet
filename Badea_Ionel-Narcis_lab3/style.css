@@ -23,13 +23,13 @@ ul li a {
     text-align: center;
     border-top: 1px solid #ffffff;
     padding: 5px 15px 5px 15px;
-    background: #1e7c9a;
+    background: rgb(83, 81, 81);
     margin-left: 1px;
     white-space: nowrap;
 }
 
 ul li a:hover {
-    background: #3b3b3b;
+    background: #6d5d5d;
 }
 
 li:hover ul {
@@ -39,10 +39,27 @@ li:hover ul {
 
 li li:hover a {
     float: none;
-    color: #fe3;
+    color: rgb(231, 138, 16);
+}
+img{
+    float: left;
+    width: 280px;
+    height: 220px;
+    object-fit: cover;
 }
 
-img {
-    max-width: 50%;
-    max-height: 50%;
+table{
+    text-align: center;
+}
+h1{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+body{
+    background-color: gray;
+}
+td{
+    padding-left: 10px;
+    padding-right: 10px;
 }
