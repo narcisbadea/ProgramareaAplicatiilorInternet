@@ -50,6 +50,8 @@ img{
 
 table{
     text-align: center;
+    border-collapse: collapse;
+    border: 1px solid black;
 }
 h1{
     text-align: center;
@@ -62,4 +64,8 @@ body{
 td{
     padding-left: 10px;
     padding-right: 10px;
+    border: 1px solid black;
+}
+th{
+    border: 1px solid black;
 }
