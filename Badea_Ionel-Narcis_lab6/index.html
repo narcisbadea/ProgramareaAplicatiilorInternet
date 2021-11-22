@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <title>Tema PAI</title>
+</head>
+<style>
+    .afisare{
+        text-align: center;
+    }
+    .button {
+        height:30px;
+        width:285px;
+    }
+</style>
+<body>
+    <form method="POST" action="http://localhost/L6/lab6_ex2_inserare.php">
+        <table border="2" align="center" BGCOLOR="Silver">
+            <tr>
+                <td>Disciplina:</td>
+                <td><input type="text" name="disciplina_form"></td>
+            </tr>
+            <tr>
+                <td>Codul:</td>
+                <td><input type="text" name="codDisciplina_form"></td>
+            </tr>
+            <tr>
+                <td>Anul de studiu:</td>
+                <td><input type="text" name="anStudiu_form"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="SUBMIT" value="Add">
+                    <input type="RESET" value="Reset">
+                </td>
+            </tr>
+            <tr>
+                
+            </tr>
+        </table>
+    </form>
+    <div class="afisare">
+        <form action="http://localhost/L6/lab6_ex2_afisare.php">
+            <input class="button" type="submit" value="Afisaza disciplinele!" />
+        </form>
+    </div>
+</body>
+</html>
