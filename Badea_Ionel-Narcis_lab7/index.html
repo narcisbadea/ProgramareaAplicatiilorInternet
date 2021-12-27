@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+<style>
+    table {
+        width: 315px;
+    }
+</style>
+
+<body>
+    <form method="POST" action="http://localhost/L7/stergere_disciplina.php">
+        <table border="3" align="center" bgcolor="silver">
+            <tr>
+                <td>Nume disciplina:</td>
+                <td><input type="text" name="nume_disciplina_form"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="SUBMIT" value="Sterge"><input type="RESET" value="Anulare"></td>
+            </tr>
+        </table>
+    </form><br><br><br><br>
+    <table border="3" align="center" bgcolor="silver">
+        <form method="POST" action="http://localhost/L7/actualizare_disciplina.php"></form>
+        <tr>
+            <td>Cod disciplina:</td>
+            <td><input type="text" name="cod_disciplina_form"></td>
+        </tr>
+        <tr>
+            <td>Nume disciplina:</td>
+            <td><input type="text" name="nume_disciplina_form"></td>
+        </tr>
+        <tr>
+            <td>An studiu:</td>
+            <td><input type="text" name="an_disciplina_form"></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"><input type="SUBMIT" value="Actualizare"><input type="RESET" value="Anulare"></td>
+        </tr>
+        </form>
+    </table><br><br><br><br>
+    <table border="3" align="center" bgcolor="silver">
+        <tr>
+            <td colspan="2" align="center">
+                <form action="http://localhost/L7/studenti_discipline.php"><input class="button" type="submit" value="Numar studenti/disciplina" /></form>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <form action="http://localhost/L7/note_studenti.php"><input class="button" type="submit" value="Note studenti" /></form>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
