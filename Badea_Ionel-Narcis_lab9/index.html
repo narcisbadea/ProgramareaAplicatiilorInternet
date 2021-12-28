@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<style>
+    table{
+        width: 310px;
+        border:solid black 2px;
+        background-color: silver;
+    }
+    body{
+        background-color: gray;
+    }
+</style>
+<body>
+    <form method="POST" action="http://localhost/L9/afisareMaxNoteStudent.php">
+        <table align="center">
+            <tr>
+                <th colspan="2">Afisarea notei maxime a unui student</th>
+            </tr>
+            <tr>
+                <td>Marca student:</td>
+                <td>
+                    <input type="text" name="marca_student_form">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="SUBMIT" value="Submit" >
+                    <input type="RESET" value="Anulare" >
+                </td>
+            </tr>
+        </table>
+    </form> 
+    <br>
+
+    <form method="POST" action="http://localhost/L9/afisareMinNoteStudent.php">
+        <table align="center">
+            <tr>
+                <th colspan="2">Afisarea notei minime a unui student</th>
+            </tr>
+            <tr>
+                <td>Marca student:</td>
+                <td>
+                    <input type="text" name="marca_student_form">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="SUBMIT" value="Submit" >
+                    <input type="RESET" value="Anulare" >
+                </td>
+            </tr>
+        </table>
+    </form> 
+    <br>
+
+    <form method="POST" action="http://localhost/L9/afisareNoteStudent.php">
+        <table align="center">
+            <tr>
+                <th colspan="2">Afisarea notelor unui student</th>
+            </tr>
+            <tr>
+                <td>Marca student:</td>
+                <td>
+                    <input type="text" name="marca_student_form">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="SUBMIT" value="Submit" >
+                    <input type="RESET" value="Anulare" >
+                </td>
+            </tr>
+        </table>
+    </form> 
+    <br>
+
+    <table align="center">
+        <tr>
+            <td align="center">Afisarea numar studenti cu 10</th>
+            <td><a href='/L9/afisareNrStudentiCu10.php'>Afisare</a></th>
+        </tr>
+        <tr>
+            <td align="center">Afisarea numar studenti promovati</td>
+            <td><a href='/L9/afisareNrStudentiPromovati.php'>Afisare</a></th>
+        </tr>
+        <tr >
+            <td align="center">Afisarea numar studenti promovati daca sunt mai mult de 2</th>
+            <td><a href='/L9/afisareNrStudentiPromovati2.php'>Afisare</a></th>
+        </tr>
+    </table>
+    <br>
+</body>
+</html>
