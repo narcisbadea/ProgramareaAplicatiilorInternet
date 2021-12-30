@@ -14,6 +14,38 @@
     }
 </style>
 <body>
+    <?php
+        $con=mysqli_connect("localhost","root","", "facultate") or die ("Nu se poate conecta la serverul MySQL");
+        $query=mysqli_query($con,"select * from studenti_ac order by An_Studiu, Nume, Prenume");
+        $nr=@mysqli_num_rows($query);
+        if ($nr>0){
+            echo "<h3 align='center'>STUDENTI INREGISTRATI</h3>";
+            echo "<table align='center' border='1'>";
+            echo "<tr bgcolor='silver'>";
+            $columns = mysqli_num_fields($query);
+            for ($i = 0; $i < $columns; $i++){
+                $variab = mysqli_fetch_field_direct($query, $i);
+                echo "<th>";
+                echo $variab->name;
+                echo "</th>";
+            }
+            echo "</tr>";
+            while ($row = mysqli_fetch_row($query)){
+                $contor=0;
+                echo" <tr>";
+                foreach ($row as $value) {
+                    echo "<td>$value</td>";
+                }
+                echo "</tr>";
+            }
+            echo "</table><br>";
+        }
+        else
+        {
+            die ("Nu gasesc nici o inregistrare ...");
+        }
+        mysqli_close($con);
+    ?>
     <form method="POST" action="http://localhost/L9/afisareMaxNoteStudent.php">
         <table align="center">
             <tr>

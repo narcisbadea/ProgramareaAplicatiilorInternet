@@ -29,7 +29,7 @@ if ($nr>0){
     }
     echo" <tr>";
     $media=$suma/$nr;
-    echo"<td>media</td>";
+    echo"<td>Media</td>";
     echo"<td>$media</td>";
     
 
